@@ -18,7 +18,7 @@ x = (x - mean) / std # normalize
 true_beta = 2. * torch.rand(config["p"], 1) - 1. # Uniform(-1, 1)
 epsilon = torch.randn(config["n"], 1)
 y = torch.matmul(x, true_beta) + epsilon
-
+#%%
 def regression_function(x, y, beta):
     """
     f(beta) = 1/(2n) || y - x beta ||_2^2
